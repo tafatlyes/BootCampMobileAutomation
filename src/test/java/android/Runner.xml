@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Selenium Test Suite" parallel="false">
+
+    <parameter name="platform" value="android"/>
+    <parameter name="platformVersion" value="10"/>
+    <parameter name="udid" value="R58MC41NVYE"/>
+    <parameter name="deviceName" value=""/>
+    <parameter name="automationName" value="UiAutomator2"/>
+    <parameter name="appPackage" value="com.twitter.android.lite"/>
+    <parameter name="appActivity" value="com.twitter.android.lite.TwitterLiteActivity"/>
+    <parameter name="bundleId" value=""/>
+
+
+    <test name="Android tests">
+        <classes>
+
+            <class name="android.tests.Regression"/>
+        </classes>
+    </test>
+</suite>
